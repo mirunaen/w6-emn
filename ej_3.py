@@ -1,14 +1,13 @@
-import random
-list=[]
+"""Add a key to toyShop called ’fluffyToy’ and set its value as a list consisting of the strings
+’bear’, ’dog’, and ’cat’. Remove ’Batman’ from the list of items stored under the
+’puzzles’ key. Add 100 to the number stored under ’dolls’ key. """
 
-length=int(input("Enter the length: "))
-total=0
-while length <=0:
-  length=int(input("The length must be grater than o,try again:"))
-while len(list) < length:
-  element=random.uniform(1,50)
-  list.append(element)
-print(list)
-for num in list:
-  total +=num//1
-  print("Total",total)
+toyShop = {
+ 'dolls': 500,
+ 'games': ['Guess who?', 'Clue', 'Battleship'],
+ 'puzzles': ['Star Wars', 'Batman', 'Ironman'],
+}
+
+toyShop["fluffyToy"]=["bear","dog","cat"]
+del toyShop["puzzles"][1]
+toyShop["dolls"] +=100

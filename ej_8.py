@@ -1,15 +1,7 @@
-"""Write a program that asks the user to enter a sentence. Then, it introduces each character of
-the sentence in a tuple, ignoring the repeated characters. The characters introduced in the
-tuple should be capitalized (you can use the upper() method of strings). Finally, it prints the
-tuple. """
-
-sentence=input("Write a sentence")
-sentence=sentence.upper()
-tuple1=tuple(sentence)
-list=[]
-for i in tuple1:
-  if i not in list:
-    list.append(i)
-tuple2=tuple(list)
-print(tuple2)
-
+"""Fill a 3x3 matrix with random numbers taking into account that the values cannot be repeated:
+7 3 21
+9 12 1
+8 13 5
+Put in order the previous matrix as in the example shown below without using max(), min(),
+neither sort()
+"""

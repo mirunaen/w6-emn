@@ -1,13 +1,14 @@
-import random
-a = []
-for i in range(0,22):
-  n=random.randint(0,100)
-  a.append(n)
-b=a
-a[10] = 12
-print(a[10])
-print(b[10])
-print(a)
-print(b)
+#Create a new dictionary called prices and put these values on it: ’apple’: 5.5, ’melon’:
+#6, ’banana’: 7.2, and ’orange’ 4. Then, loop through each key in prices and print the
+#key along with its price. 
 
-#Yes,because they become the same list when we say a=b.
+
+prices={
+  "apple": 5.5,
+  "melon":6,
+  "banana": 7.2,
+  "orange": 4
+}
+
+for i in prices:
+  print(i,":",prices[i])

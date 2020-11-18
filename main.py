@@ -1,70 +1,38 @@
-list1=[1,2,3,4,5,7]
-list1[0]=list1[2]
-print(list1[0],list1[2])
-list1[2]=4
-print(list1[0],list1[2])
+import random
 
-#The value of list1[0] doesnt change because we say hey the first number will be the third one,okay,now we will change the thrid one to 4 but not the 1ª one.The same would happen if we reverse the order.
+maria = {"name": "Maria","homework":[],"weekAssignments":[]}
+pedro = {"name": "Maria","homework":[],"weekAssignments":[]}
+miguel = {"name": "Maria","homework":[],"weekAssignments":[]}
 
-"""import random
+print(maria,pedro,miguel)
 
-rigth=False
-while not rigth:
-  num=int(input("Enter a num:"))
-  if num > 5:
-    rigth=True
+# Marks for in range(1,11):
+for i in range(1, 11):
+  nota=random.randint(0, 10) 
+  maria["homework"].append(nota)
 
-result=0
-previous=0
-for i in range(1,num+1):
-  total=random.randint(1,10)
-  print("Num generated",total)
-  if total > previous:
-    print("Bigger than previous.Add it",result)
-    result=total + previous
-    
-  else:
-    print("Not bigger than the previous one,I will substract it")
-    result=total-previous
-previous=total
-print("The current value is",num)
-    
+for i in range(1, 11):
+  nota=random.randint(0, 10) 
+  pedro["homework"].append(nota)
 
+for i in range(1, 11):
+  nota=random.randint(0, 10) 
+  miguel["homework"].append(nota)
 
-print(total)"""
-"""import random 
-list1=[]
-list2=[]
+#Week assignments
+for i in range(1, 11):
+  nota2=random.randint(0, 10) 
+  maria["weekAssignments"].append(nota2)
 
-for i in range(1,100):
-  n=random.randint(0,100)
-  u=random.randint(0,100)
-  list1.append(n)
-  list2.append(u)
+for i in range(1, 11):
+  nota2=random.randint(0, 10) 
+  pedro["weekAssignments"].append(nota2)
+
+for i in range(1, 11):
+  nota2=random.randint(0, 10) 
+  miguel["weekAssignments"].append(nota2)
 
 
-num=int(input("Enter num between 1 and 100:"))
-if num not in range(1,100):
-  num=int(input("Enter num between 1 and 100:"))
-else:
-  if num in range(1,100):
-   position1=list1.index(num)
-   position2=list2.index(num)
-   if num=position1:
-
-  else:
-    print(num,"not in the list")
-
-  list1=[1,2,3]
-  for i in list1:
-    print(i)
-
-
-  """
-
-"""list1=[1,2,3]
-list2=[4,5,6]
-list1.append(88)
-list2.extend(list1)
-print(list1)
-print(list2)"""
+maria["test"]=random.randint(0,10)
+pedro["test"]=random.randint(0,10)
+miguel["test"]=random.randint(0,10)

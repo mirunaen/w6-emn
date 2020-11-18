@@ -1,13 +1,12 @@
-"""Write a program that creates a tuple with the names of the months of the year. Then, the
-program will ask the user for a number. If the number is between 1 and the maximum length of
-the tuple, it will show the corresponding month of the year. Otherwise, it will show an error
-message and will ask for another number. The program will run until the user enters a 0."""
-
-months = ('January','February','March','April','May','June','July','August','September','October','November','December')
-num=input("Write your num")
-while num > len(months):
-  num=input("Write another num between 12 and 1")
-if num==0 :
-  print("end")
-else:
-  print(months[num])
+A = []
+B = [[],[]]
+rows_A = int(input("Enter the number of rows of A and press enter: "))
+column_A = int(input("Enter the number of columns of A and press enter:"))
+#rows_B = int(input("Enter the number of rows of B and press enter:"))
+#column_B = int(input("Enter the number of columns of B and press enter:"))
+while len(A) < rows_A:
+  for i in range(0,rows_A):
+    A.append([])
+    for j in range (0, column_A):
+      n = int(input("Number: " ))
+    A[j].append(n)
