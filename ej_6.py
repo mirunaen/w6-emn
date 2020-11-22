@@ -1,12 +1,4 @@
-A = []
-B = [[],[]]
-rows_A = int(input("Enter the number of rows of A and press enter: "))
-column_A = int(input("Enter the number of columns of A and press enter:"))
-#rows_B = int(input("Enter the number of rows of B and press enter:"))
-#column_B = int(input("Enter the number of columns of B and press enter:"))
-while len(A) < rows_A:
-  for i in range(0,rows_A):
-    A.append([])
-    for j in range (0, column_A):
-      n = int(input("Number: " ))
-    A[j].append(n)
+#Create a function that receives as parameters a list and an element and returns a tuple with the
+#positions of the element in the list, or the empty tuple if the element is not in the list. Invoking 
+#this function, create another one that receives two lists and an element and returns if any of the
+#appearances of the element is at the same position in both lists.

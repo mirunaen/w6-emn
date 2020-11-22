@@ -1,13 +1,63 @@
-"""Add a key to toyShop called ’fluffyToy’ and set its value as a list consisting of the strings
-’bear’, ’dog’, and ’cat’. Remove ’Batman’ from the list of items stored under the
-’puzzles’ key. Add 100 to the number stored under ’dolls’ key. """
+def count(list,x):
+  counter=0
+  for i in list:
+    if i ==x:
+      counter +=1
+  return counter
 
-toyShop = {
- 'dolls': 500,
- 'games': ['Guess who?', 'Clue', 'Battleship'],
- 'puzzles': ['Star Wars', 'Batman', 'Ironman'],
-}
+def index(list,x):
+  for i in range(len(list)):
+    if list[i] == x:
+      return index
+    elif x not in list:
+      return -1
 
-toyShop["fluffyToy"]=["bear","dog","cat"]
-del toyShop["puzzles"][1]
-toyShop["dolls"] +=100
+def append(list,x):
+  newList=list + [x]
+  return newList
+
+def find(list,x):
+  if x in list:
+    return True
+  else:
+    return False
+
+def insert(list,x,index):
+  x= [x]
+  list=list[:index] + x + list[index-1:]
+  return list
+
+def remove(list,x):
+  for i in range(len(list)):
+    if list[i]==x:
+      del list[i]
+      return list
+
+def removeAll(list,x):
+  list1=[]
+  for i in list:
+    if i!= x:
+      list2=[i]
+      list1 +=list2
+  return list1
+
+
+def clear(list):
+  list=[]
+  return list
+
+def pop(list):
+  a=list[-1]
+  del list[-1]
+  return a
+
+list1=[1,2,3,4,5,8]
+print(count(list1,2))
+print(index(list1,5))
+print(append(list1,0))
+print(find(list1,3))
+print(insert(list1,0,2))
+print(remove(list1,2))
+print(removeAll(list1,2))
+print(clear(list1))
+print(pop(list1))

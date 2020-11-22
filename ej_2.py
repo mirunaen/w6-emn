@@ -1,14 +1,14 @@
-#Create a new dictionary called prices and put these values on it: ’apple’: 5.5, ’melon’:
-#6, ’banana’: 7.2, and ’orange’ 4. Then, loop through each key in prices and print the
-#key along with its price. 
+def combine(list1,list2):
+  combination=[]
+  for i in list1:
+    if i not in list2:
+      combination.append(i)
+  for i in list2:
+    combination.append(i)
+  
+  return combination
 
+list1=[1,2,3,4,5,6]
+list2=[3,4,5,7,8,9]
 
-prices={
-  "apple": 5.5,
-  "melon":6,
-  "banana": 7.2,
-  "orange": 4
-}
-
-for i in prices:
-  print(i,":",prices[i])
+print(combine(list1,list2))
